@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: datenschutz.html
+Disallow: /datenschutz.html
