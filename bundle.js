@@ -2249,7 +2249,7 @@ var $ = require('jquery');
 function generateText() {
     var text = createText();
     $('#hypnotext').text(text);
-    responsiveVoice.speak(text, 'Deutsch Female');
+    responsiveVoice.speak(text, 'Deutsch Female', {rate:0.85});
 }
 
 module.exports = generateText;
