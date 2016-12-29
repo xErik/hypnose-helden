@@ -2247,6 +2247,11 @@ var createText = require('hypnomodel');
 var $ = require('jquery');
 
 function generateText() {
+    ga('send', {
+            hitType: 'event',
+            eventCategory: 'hypnoseroboter',
+            eventAction: 'cfg'
+        });
     var text = createText();
     $('#hypnotext').text(text);
     responsiveVoice.speak(text, 'Deutsch Female', {rate:0.9});
